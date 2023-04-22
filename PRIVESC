@@ -1,7 +1,9 @@
                                                      ---PRIVESC---
 
 
-a site to consult Suid's:
+site para consultar suid's
 https://gtfobins.github.io/
+
+voce pode procurar exploits para uma determinada maquina sabendo a versao (voce pode saber a versao utilizando "cat /proc/version")
 
 ---END---
